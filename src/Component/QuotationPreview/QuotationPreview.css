@@ -1,0 +1,554 @@
+
+/* =========================================
+   QUOTATION PREVIEW CONTAINER
+========================================= */
+
+.quotation-preview-container {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.preview-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.preview-topbar div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #263747;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.preview-print-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: #263747;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 12px 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.preview-print-button:hover {
+  background: #c9962b;
+}
+
+/* =========================================
+   QUOTATION DOCUMENT
+========================================= */
+
+.quotation-document {
+  background: #fff;
+  padding: 45px;
+  max-width: 1000px;
+  margin: auto;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+  color: #263747;
+}
+
+/* =========================================
+   DOCUMENT HEADER
+========================================= */
+
+.document-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  padding-bottom: 25px;
+  border-bottom: 3px solid #c9962b;
+  width: 100%;
+}
+
+.document-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.document-brand img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.document-brand h1 {
+  font-size: 25px;
+  margin: 0 0 5px;
+  letter-spacing: 2px;
+}
+
+.document-brand p {
+  margin: 0;
+  font-size: 12px;
+  color: #777;
+}
+
+.document-company-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 8px;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+.document-company-details p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   DOCUMENT TITLE
+========================================= */
+
+.document-title {
+  text-align: center;
+  margin: 35px 0 25px;
+}
+
+.document-title h2 {
+  font-size: 30px;
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.document-title p {
+  color: #777;
+  margin-top: 8px;
+}
+
+/* =========================================
+   DOCUMENT INFORMATION
+========================================= */
+
+.document-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 18px;
+  background: #f4f5f7;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.document-meta div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.document-meta span,
+.document-customer h3 {
+  font-size: 11px;
+  color: #777;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.document-meta strong {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   CUSTOMER AND PROJECT DETAILS
+========================================= */
+
+.document-customer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.document-customer h3 {
+  color: #c9962b;
+  margin-bottom: 12px;
+}
+
+.document-customer h2 {
+  font-size: 17px;
+  margin: 0 0 8px;
+}
+
+.document-customer p {
+  font-size: 13px;
+  color: #666;
+  margin: 5px 0;
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   QUOTATION ITEMS
+========================================= */
+
+.document-section {
+  margin-bottom: 25px;
+}
+
+.document-section h3 {
+  background: #263747;
+  color: #fff;
+  padding: 12px 15px;
+  font-size: 14px;
+  margin: 0;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.document-section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.document-section th,
+.document-section td {
+  padding: 12px 10px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.document-section th {
+  background: #f4f5f7;
+  font-weight: 700;
+}
+
+.document-section th:not(:first-child),
+.document-section td:not(:first-child) {
+  text-align: right;
+}
+
+.document-section tfoot td {
+  background: #f4f5f7;
+  font-weight: 700;
+}
+
+/* =========================================
+   QUOTATION SUMMARY
+========================================= */
+
+.document-summary {
+  width: 100%;
+  max-width: 430px;
+  margin: 30px 0 30px auto;
+}
+
+.document-summary div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 11px 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 13px;
+}
+
+.document-grand-total {
+  background: #263747;
+  color: #fff;
+  padding: 15px !important;
+  border-radius: 6px;
+  font-size: 15px !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.document-balance {
+  color: #c9962b;
+  font-weight: 700;
+}
+
+/* =========================================
+   BANK AND PAYMENT DETAILS
+========================================= */
+
+.document-payment-details {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f4f5f7;
+  border-left: 4px solid #c9962b;
+  border-radius: 6px;
+  color: #263747;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.document-payment-details h3 {
+  font-size: 14px;
+  margin: 0 0 14px;
+  color: #263747;
+  letter-spacing: 1px;
+}
+
+.document-payment-details p {
+  font-size: 13px;
+  margin: 8px 0;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.document-payment-details strong {
+  color: #263747;
+}
+
+.payment-instructions {
+  margin-top: 14px !important;
+}
+
+/* =========================================
+   TERMS AND CONDITIONS
+========================================= */
+
+.document-terms {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.document-terms h3 {
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.document-terms p {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.7;
+  margin: 5px 0;
+}
+
+/* =========================================
+   DOCUMENT FOOTER
+========================================= */
+
+.document-footer {
+  margin-top: 45px;
+  padding-top: 20px;
+  border-top: 2px solid #c9962b;
+  text-align: center;
+}
+
+.document-footer p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.document-footer strong {
+  font-size: 12px;
+  color: #c9962b;
+}
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 768px) {
+  .quotation-document {
+    padding: 25px 18px;
+  }
+
+  .document-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .document-brand {
+    gap: 10px;
+  }
+
+  .document-brand img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .document-brand h1 {
+    font-size: 20px;
+  }
+
+  .document-company-details {
+    text-align: right;
+    align-items: flex-end;
+    font-size: 11px;
+  }
+
+  .document-customer {
+    gap: 20px;
+  }
+
+  .document-section {
+    overflow-x: auto;
+  }
+
+  .document-section table {
+    min-width: 600px;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 550px) {
+  .preview-topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .preview-print-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .quotation-document {
+    padding: 20px 12px;
+  }
+
+  .document-header {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .document-brand {
+    gap: 7px;
+    min-width: 0;
+  }
+
+  .document-brand img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .document-brand h1 {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .document-brand p {
+    font-size: 9px;
+  }
+
+  .document-company-details {
+    font-size: 9px;
+    gap: 6px;
+    overflow-wrap: anywhere;
+  }
+
+  .document-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .document-customer {
+    grid-template-columns: 1fr;
+  }
+
+  .document-title h2 {
+    font-size: 24px;
+  }
+
+  .document-summary {
+    max-width: 100%;
+  }
+
+  .document-payment-details {
+    padding: 15px;
+  }
+}
+
+/* =========================================
+   PRINT SETTINGS
+========================================= */
+
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
+  html,
+  body {
+    height: auto !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
+
+  body * {
+    visibility: hidden !important;
+  }
+
+  #quotation-document,
+  #quotation-document * {
+    visibility: visible !important;
+  }
+
+  #quotation-document {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 10px !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    color: #263747 !important;
+  }
+
+  .quotation-preview-container {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  .preview-topbar,
+  .preview-print-button {
+    display: none !important;
+  }
+
+  .document-section,
+  .document-payment-details,
+  .document-terms,
+  .document-summary {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .document-section table {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .document-section th,
+  .document-section td {
+    font-size: 10px !important;
+    padding: 7px !important;
+  }
+
+  .document-grand-total,
+  .document-section h3 {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

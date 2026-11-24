@@ -1,0 +1,436 @@
+
+/* =========================================
+   SUNGUARD - CREATE INVOICE PAGE
+========================================= */
+
+.create-invoice-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 22px 20px 45px;
+  color: #263747;
+  box-sizing: border-box;
+}
+
+.create-invoice-page * {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   PAGE HEADING
+========================================= */
+
+.create-invoice-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.create-invoice-heading-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 55px;
+  height: 55px;
+  color: #c9962b;
+  background: #fff8e8;
+  border-radius: 12px;
+  font-size: 24px;
+}
+
+.create-invoice-heading-content {
+  min-width: 0;
+}
+
+.create-invoice-heading-content span {
+  display: block;
+  margin-bottom: 5px;
+  color: #c9962b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.create-invoice-heading h1 {
+  margin: 0 0 5px;
+  color: #263747;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.create-invoice-heading p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   SOURCE QUOTATION CARD
+========================================= */
+
+.invoice-source-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 22px;
+  padding: 17px 20px;
+  background: #fffaf0;
+  border: 1px solid #ead7a5;
+  border-left: 4px solid #c9962b;
+  border-radius: 8px;
+}
+
+.invoice-source-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.invoice-source-card strong {
+  color: #263747;
+  font-size: 13px;
+}
+
+.invoice-source-card span {
+  color: #9a6d16;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================================
+   DETAILS CARDS
+========================================= */
+
+.invoice-details-card {
+  margin-bottom: 22px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(38, 55, 71, 0.04);
+}
+
+.invoice-details-card h2 {
+  margin: 0 0 20px;
+  padding-bottom: 12px;
+  color: #263747;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* =========================================
+   INVOICE FORM FIELDS
+========================================= */
+
+.invoice-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.invoice-field {
+  min-width: 0;
+}
+
+.invoice-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #263747;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.invoice-field input,
+.invoice-field select,
+.invoice-field textarea {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 11px 13px;
+  color: #263747;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.invoice-field input:focus,
+.invoice-field select:focus,
+.invoice-field textarea:focus {
+  border-color: #c9962b;
+  box-shadow: 0 0 0 3px rgba(201, 150, 43, 0.12);
+}
+
+.invoice-field input:read-only {
+  background: #f8fafc;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   CUSTOMER INFORMATION
+========================================= */
+
+.invoice-customer-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px 25px;
+}
+
+.invoice-customer-info p {
+  margin: 0;
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.invoice-customer-info strong {
+  color: #263747;
+  font-weight: 700;
+}
+
+/* =========================================
+   INVOICE SUMMARY
+========================================= */
+
+.invoice-summary {
+  margin-bottom: 22px;
+}
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.invoice-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.invoice-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 205px;
+  min-height: 46px;
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.invoice-actions button svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.invoice-actions button span {
+  display: inline-block;
+}
+
+/* SAVE INVOICE */
+
+.invoice-save-button {
+  color: #ffffff;
+  background: #263747;
+  border-color: #263747;
+}
+
+.invoice-save-button:hover {
+  color: #ffffff;
+  background: #1b2935;
+  border-color: #1b2935;
+}
+
+/* BACK TO DOCUMENTS */
+
+.invoice-back-button {
+  color: #263747;
+  background: #ffffff;
+  border-color: #d1d5db !important;
+}
+
+.invoice-back-button:hover {
+  color: #263747;
+  background: #f4f5f7;
+  border-color: #263747 !important;
+}
+
+/* =========================================
+   SAVED MESSAGE
+========================================= */
+
+.invoice-saved-message {
+  margin: 15px 0;
+  padding: 13px 16px;
+  color: #166534;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 7px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* =========================================
+   EMPTY INVOICE STATE
+========================================= */
+
+.invoice-empty {
+  max-width: 500px;
+  margin: 55px auto;
+  padding: 40px 25px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(38, 55, 71, 0.05);
+}
+
+.invoice-empty-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 18px;
+  color: #c9962b;
+  background: #fff8e8;
+  border-radius: 50%;
+  font-size: 27px;
+}
+
+.invoice-empty h2 {
+  margin: 0 0 10px;
+  color: #263747;
+  font-size: 21px;
+}
+
+.invoice-empty p {
+  margin: 0 0 22px;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.invoice-empty button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 44px;
+  padding: 11px 20px;
+  color: #ffffff;
+  background: #263747;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.invoice-empty button svg {
+  display: block;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN - TABLET
+========================================= */
+
+
+/* =========================================
+   SUNGUARD - A4 INVOICE PRINT SETTINGS
+========================================= */
+
+
+/* =========================================
+   SUNGUARD - INVOICE PRINT SETTINGS
+========================================= */
+
+@media print {
+
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
+  html,
+  body {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+
+  /* Hide everything initially */
+  body * {
+    visibility: hidden !important;
+  }
+
+  /* Show only the invoice */
+  #invoice-document,
+  #invoice-document * {
+    visibility: visible !important;
+  }
+
+  /* Position invoice at the beginning of the page */
+  #invoice-document {
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 10px !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+    color: #263747 !important;
+    overflow: visible !important;
+  }
+
+  .invoice-preview-topbar {
+    display: none !important;
+  }
+
+  .invoice-document-section tr {
+    break-inside: avoid;
+  }
+
+  .invoice-document-header,
+  .invoice-document-summary,
+  .invoice-payment-notice,
+  .invoice-document-payment-details,
+  .invoice-document-footer {
+    break-inside: avoid;
+  }
+
+  #invoice-document,
+  #invoice-document * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

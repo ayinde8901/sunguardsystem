@@ -1,0 +1,53 @@
+
+.app {
+  min-height: 100vh;
+}
+
+.app-header {
+  background: var(--primary);
+  color: var(--white);
+  padding: 22px 6%;
+  border-bottom: 4px solid var(--gold);
+}
+
+.brand h1 {
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.brand p {
+  color: #e0c58e;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.app-main {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.app-main h2 {
+  font-size: 28px;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.app-main p {
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    padding: 18px 5%;
+  }
+
+  .app-main {
+    margin-top: 30px;
+  }
+
+  .app-main h2 {
+    font-size: 22px;
+  }
+}

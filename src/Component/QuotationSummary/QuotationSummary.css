@@ -1,0 +1,246 @@
+
+/* QUOTATION SUMMARY */
+.quotation-summary {
+  width: 100%;
+  max-width: 650px;
+  margin: 30px 0 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(38, 55, 71, 0.05);
+}
+
+/* HEADER */
+.summary-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.summary-header-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #263747;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.summary-header span {
+  color: #c9962b;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.summary-header h2 {
+  margin: 5px 0;
+  color: #263747;
+  font-size: 21px;
+}
+
+.summary-header p {
+  color: #7b8490;
+  font-size: 12px;
+}
+
+/* SUMMARY ROWS */
+.summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 19px 0;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.summary-row-label,
+.summary-balance-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #66717e;
+  font-size: 14px;
+}
+
+.summary-row-label svg,
+.summary-balance-label svg {
+  color: #c9962b;
+}
+
+.summary-row strong {
+  color: #263747;
+  font-size: 16px;
+}
+
+/* INPUT ROWS */
+.summary-input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 18px 0;
+  border-bottom: 1px solid #edf0f2;
+}
+
+.summary-input-row label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #66717e;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.summary-input-row label svg {
+  color: #c9962b;
+}
+
+.summary-input-row input {
+  width: 180px;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #dfe3e8;
+  border-radius: 7px;
+  outline: none;
+  color: #263747;
+  font-size: 13px;
+}
+
+.summary-input-row input:focus {
+  border-color: #c9962b;
+  box-shadow: 0 0 0 3px rgba(201, 150, 43, 0.1);
+}
+
+/* GRAND TOTAL */
+.summary-grand-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 20px 0;
+  padding: 20px;
+  background: #263747;
+  border-radius: 9px;
+}
+
+.summary-grand-total span {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.summary-grand-total strong {
+  color: #f0c45f;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* OUTSTANDING BALANCE */
+.summary-balance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 19px;
+  background: #fff5df;
+  border: 1px solid #f1dfb8;
+  border-radius: 8px;
+}
+
+.summary-balance-label {
+  color: #73551b;
+  font-weight: 700;
+}
+
+.summary-balance-label svg {
+  color: #966b17;
+}
+
+.summary-balance strong {
+  color: #966b17;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.summary-note {
+  margin-top: 15px;
+  color: #8b95a1;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* TABLET AND MOBILE */
+@media (max-width: 768px) {
+  .quotation-summary {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .quotation-summary {
+    padding: 17px;
+  }
+
+  .summary-header h2 {
+    font-size: 18px;
+  }
+
+  .summary-row,
+  .summary-input-row,
+  .summary-grand-total,
+  .summary-balance {
+    gap: 10px;
+  }
+
+  .summary-input-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .summary-input-row input {
+    width: 100%;
+  }
+
+  .summary-grand-total strong {
+    font-size: 18px;
+  }
+
+  .summary-balance strong {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  .quotation-summary {
+    padding: 13px;
+  }
+
+  .summary-row-label,
+  .summary-balance-label {
+    font-size: 12px;
+  }
+
+  .summary-grand-total {
+    padding: 14px;
+  }
+
+  .summary-grand-total span {
+    font-size: 10px;
+  }
+
+  .summary-grand-total strong {
+    font-size: 15px;
+  }
+
+  .summary-balance {
+    padding: 13px;
+  }
+}

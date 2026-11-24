@@ -1,0 +1,282 @@
+
+.settings-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 35px 20px;
+}
+
+.settings-page-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.settings-heading-icon {
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #263747;
+  color: #c9962b;
+  border-radius: 10px;
+  font-size: 23px;
+}
+
+.settings-page-heading span {
+  color: #c9962b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.settings-page-heading h1 {
+  color: #263747;
+  font-size: 27px;
+  margin: 5px 0;
+}
+
+.settings-page-heading p {
+  color: #718096;
+  font-size: 13px;
+}
+
+/* SETTINGS CARDS */
+.settings-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 27px;
+  margin-bottom: 23px;
+}
+
+.settings-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 20px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #edf0f3;
+}
+
+.settings-section-icon {
+  width: 42px;
+  height: 42px;
+  min-width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff5dc;
+  color: #c9962b;
+  border-radius: 8px;
+  font-size: 17px;
+}
+
+.settings-card-heading h2 {
+  color: #263747;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.settings-card-heading p {
+  color: #718096;
+  font-size: 12px;
+}
+
+/* FORM GRID */
+.settings-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.settings-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.settings-field label {
+  color: #263747;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.settings-field input,
+.settings-field select,
+.settings-field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #dce2e8;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #263747;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.settings-field input:focus,
+.settings-field select:focus,
+.settings-field textarea:focus {
+  border-color: #c9962b;
+  box-shadow: 0 0 0 3px rgba(201, 150, 43, 0.12);
+}
+
+.settings-field textarea {
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.footer-message-field {
+  margin-top: 22px;
+}
+
+/* ACTION BUTTONS */
+.settings-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 13px;
+  margin: 30px 0 15px;
+}
+
+.settings-save-button,
+.settings-reset-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 22px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.settings-save-button {
+  background: #263747;
+  color: #ffffff;
+  border: 1px solid #263747;
+}
+
+.settings-save-button:hover {
+  background: #c9962b;
+  border-color: #c9962b;
+}
+
+.settings-reset-button {
+  background: #ffffff;
+  color: #263747;
+  border: 1px solid #dce2e8;
+}
+
+.settings-reset-button:hover {
+  background: #f4f5f7;
+  border-color: #263747;
+}
+
+.settings-success-message {
+  padding: 14px 16px;
+  background: #e8f7ee;
+  color: #16834a;
+  border: 1px solid #c8ead5;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* TABLETS */
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 28px 16px;
+  }
+
+  .settings-card {
+    padding: 22px;
+  }
+
+  .settings-page-heading h1 {
+    font-size: 23px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 550px) {
+  .settings-page {
+    padding: 22px 13px;
+  }
+
+  .settings-page-heading {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .settings-heading-icon {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    font-size: 19px;
+  }
+
+  .settings-page-heading h1 {
+    font-size: 20px;
+  }
+
+  .settings-page-heading p {
+    font-size: 11px;
+  }
+
+  .settings-page-heading span {
+    font-size: 9px;
+  }
+
+  .settings-card {
+    padding: 18px 15px;
+  }
+
+  .settings-card-heading {
+    gap: 10px;
+  }
+
+  .settings-card-heading h2 {
+    font-size: 15px;
+  }
+
+  .settings-card-heading p {
+    font-size: 11px;
+  }
+
+  .settings-form-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .settings-field.full-width {
+    grid-column: auto;
+  }
+
+  .footer-message-field {
+    margin-top: 18px;
+  }
+
+  .settings-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .settings-save-button,
+  .settings-reset-button {
+    width: 100%;
+  }
+}
